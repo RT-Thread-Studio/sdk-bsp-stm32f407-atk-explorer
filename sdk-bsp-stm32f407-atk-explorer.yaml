@@ -86,7 +86,7 @@ default_projects:
   project_type: rt-thread|@full|@latest
 docs:
 - category: manual
-  file: documents/manuals/DM00031020.pdf.pdf
+  file: documents/manuals/DM00031020.pdf
   title: Reference manual
 - category: sheet
   file: documents/sheet/DM00037051.pdf
