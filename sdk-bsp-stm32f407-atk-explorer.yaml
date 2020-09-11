@@ -101,6 +101,6 @@ features:
 - 常用接口：USB 转串口、SD 卡接口、以太网接口、LCD 接口、USB SLAVE、USB HOST
 - 调试接口，标准 JTAG/SWD
 pkg_type: Board_Support_Packages
-pkg_vendor: RealThead
+pkg_vendor: RealThread
 pkg_version: 0.1.0
 yaml_version: 1
