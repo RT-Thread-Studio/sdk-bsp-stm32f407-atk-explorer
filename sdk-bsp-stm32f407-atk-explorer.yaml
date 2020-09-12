@@ -93,6 +93,14 @@ docs:
   title: STM32F407 Datasheet
 example_projects: []
 features:
+- "MCU: STM32F407ZGT6, 168MHz, 1024KB FLASH , 192KB RAM"
+- "External RAM: IS62WV51216(1MB)"
+- "External FLASH: W25Q128(SPI, 16MB)"
+- "LED: 2, DS0(Red, PB1), DS1(Green, PB0)"
+- "Buttons: KEY_UP(Wake-up, PIN：0), K0(PIN：68), K1(PIN：67), K2(PIN：66)"
+- "Interface: USB-Serial、SD Card、Ethernet、LCD、USB SLAVE、USB HOST"
+- "Debug: JTAG/SWD"
+features_zh:
 - MCU：STM32F407ZGT6，主频 168MHz，1024KB FLASH ，192KB RAM
 - 外部 RAM：IS62WV51216（1MB）
 - 外部 FLASH：W25Q128（SPI，16MB）
@@ -103,4 +111,4 @@ features:
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
 pkg_version: 0.1.0
-yaml_version: 1
+yaml_version: 2
