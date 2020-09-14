@@ -52,7 +52,6 @@ default_projects:
     - README.md
     - rtconfig.h
     - rtconfig.py
-    - rtconfig.pyc
     - rtconfig_preinc.h
     - SConscript
     - SConstruct
@@ -110,5 +109,5 @@ features_zh:
 - 调试接口，标准 JTAG/SWD
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.0
+pkg_version: 0.1.1
 yaml_version: 2
