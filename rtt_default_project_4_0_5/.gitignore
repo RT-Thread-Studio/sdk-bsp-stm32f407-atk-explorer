@@ -39,4 +39,3 @@ DebugConfig/
 RTE/
 settings/
 *.uvguix*
-cconfig.h
