@@ -3,8 +3,11 @@ board:
   buy_url_global: http://www.opendev.com/
   debug_interface: SWD
   debugger: ST-LINK
-  description_en: The Explorer STM32F407 is a development board based on the ARM Cortex-M4 core launched by ATK. The highest frequency is 168Mhz. The development board has rich onboard resources and can give full play to the chip performance of STM32F407.
-  description_zh: 探索者 STM32F407 是正点原子推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 168Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32F407 的芯片性能。
+  description_en: The Explorer STM32F407 is a development board based on the ARM Cortex-M4
+    core launched by ATK. The highest frequency is 168Mhz. The development board has
+    rich onboard resources and can give full play to the chip performance of STM32F407.
+  description_zh: 探索者 STM32F407 是正点原子推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 168Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F407 的芯片性能。
   emulator_machine: ''
   large_image: documents/images/board_large.png
   name: STM32F407-ATK-EXPLORER
@@ -28,6 +31,61 @@ chip:
   tx_name: PA9
   uart_name: UART1
 default_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: rtt_default_project_4_0_5
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/Sconscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 4.0.5
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@4.0.5
 - builtin_files:
   - files_and_folders:
     - .config
@@ -92,13 +150,13 @@ docs:
   title: STM32F407 Datasheet
 example_projects: []
 features:
-- "MCU: STM32F407ZGT6, 168MHz, 1024KB FLASH , 192KB RAM"
-- "External RAM: IS62WV51216(1MB)"
-- "External FLASH: W25Q128(SPI, 16MB)"
-- "LED: 2, DS0(Red, PB1), DS1(Green, PB0)"
-- "Buttons: KEY_UP(Wake-up, PIN：0), K0(PIN：68), K1(PIN：67), K2(PIN：66)"
-- "Interface: USB-Serial、SD Card、Ethernet、LCD、USB SLAVE、USB HOST"
-- "Debug: JTAG/SWD"
+- 'MCU: STM32F407ZGT6, 168MHz, 1024KB FLASH , 192KB RAM'
+- 'External RAM: IS62WV51216(1MB)'
+- 'External FLASH: W25Q128(SPI, 16MB)'
+- 'LED: 2, DS0(Red, PB1), DS1(Green, PB0)'
+- 'Buttons: KEY_UP(Wake-up, PIN：0), K0(PIN：68), K1(PIN：67), K2(PIN：66)'
+- 'Interface: USB-Serial、SD Card、Ethernet、LCD、USB SLAVE、USB HOST'
+- 'Debug: JTAG/SWD'
 features_zh:
 - MCU：STM32F407ZGT6，主频 168MHz，1024KB FLASH ，192KB RAM
 - 外部 RAM：IS62WV51216（1MB）
@@ -109,5 +167,5 @@ features_zh:
 - 调试接口，标准 JTAG/SWD
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.1
+pkg_version: 0.1.2
 yaml_version: 2
